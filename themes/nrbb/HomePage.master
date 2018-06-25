@@ -1,0 +1,7 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/themes/nrbb/site.master" AutoEventWireup="true" CodeFile="HomePage.master.cs" Inherits="themes_nrbb_HomePage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphBody" Runat="Server">
+</asp:Content>
+

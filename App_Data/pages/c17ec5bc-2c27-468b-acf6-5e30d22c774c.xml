@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>Band</title>
+  <description>North Royalton Marching Band</description>
+  <content>Band</content>
+  <keywords>Band</keywords>
+  <slug>band</slug>
+  <parent>00000000-0000-0000-0000-000000000000</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <datecreated>2014-04-19 09:04:00</datecreated>
+  <datemodified>2014-05-17 14:56:26</datemodified>
+</page>

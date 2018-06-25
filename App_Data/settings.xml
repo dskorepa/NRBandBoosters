@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <description>The official website of the North Royalton Band Boosters.</description>
+  <commentblacklistcount>2</commentblacklistcount>
+  <commentsperpage>10</commentsperpage>
+  <numberofrecentcomments>0</numberofrecentcomments>
+  <theme>nrbb</theme>
+  <geocodinglongitude>0</geocodinglongitude>
+  <enablerating>False</enablerating>
+  <themecookiename>nrbb</themecookiename>
+  <trustauthenticatedusers>True</trustauthenticatedusers>
+  <moderationtype>Auto</moderationtype>
+  <enablerecaptchaoncontactform>False</enablerecaptchaoncontactform>
+  <culture>en</culture>
+  <compresswebresource>True</compresswebresource>
+  <searchcommentlabeltext>Include comments in search</searchcommentlabeltext>
+  <timestamppostlinks>True</timestamppostlinks>
+  <emailsubjectprefix>Weblog</emailsubjectprefix>
+  <enablewebsiteincomments>False</enablewebsiteincomments>
+  <selfregistrationinitialrole>Select</selfregistrationinitialrole>
+  <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
+  <postsperfeed>3</postsperfeed>
+  <useblognameinpagetitles>False</useblognameinpagetitles>
+  <enabletrackbacksend>False</enabletrackbacksend>
+  <descriptioncharacters>300</descriptioncharacters>
+  <blockauthoroncommentdelete>False</blockauthoroncommentdelete>
+  <iscocommentenabled>False</iscocommentenabled>
+  <smtpusername>username</smtpusername>
+  <alternatefeedurl />
+  <language>en-US</language>
+  <enablecontactattachments>True</enablecontactattachments>
+  <showincludecommentsoption>False</showincludecommentsoption>
+  <sendmailoncomment>True</sendmailoncomment>
+  <createblogonselfregistration>False</createblogonselfregistration>
+  <numberofrecentposts>8</numberofrecentposts>
+  <enablecommentsmoderation>False</enablecommentsmoderation>
+  <commentreportmistakes>False</commentreportmistakes>
+  <requiresslmetaweblogapi>False</requiresslmetaweblogapi>
+  <enablessl>False</enablessl>
+  <allowservertodownloadremotefiles>True</allowservertodownloadremotefiles>
+  <israzortheme>False</israzortheme>
+  <blogrollvisibleposts>3</blogrollvisibleposts>
+  <iscommentsenabled>False</iscommentsenabled>
+  <thumbnailserviceapi>http://www.robothumb.com/src/?url={0}</thumbnailserviceapi>
+  <descriptioncharactersforpostsbytagorcategory>0</descriptioncharactersforpostsbytagorcategory>
+  <displaycommentsonrecentposts>False</displaycommentsonrecentposts>
+  <disqusdevmode>False</disqusdevmode>
+  <enableenclosures>False</enableenclosures>
+  <timezone>0</timezone>
+  <email>name@example.com</email>
+  <feedauthor />
+  <enablecountryincomments>False</enablecountryincomments>
+  <remotefiledownloadtimeout>30000</remotefiledownloadtimeout>
+  <enableselfregistration>False</enableselfregistration>
+  <securityvalidationkey>ede308e723ae42aab289b04350133355accaa0f0da9743e7a8529a0cbbf5bceee5bcafc4eac741f68d2d63d80e21bf8e</securityvalidationkey>
+  <remotemaxfilesize>624288</remotemaxfilesize>
+  <enabletrackbackreceive>False</enabletrackbackreceive>
+  <enablecommentsearch>False</enablecommentsearch>
+  <contactformmessage>&lt;p&gt;I'll answer the mail as soon as I can.&lt;/p&gt;</contactformmessage>
+  <postsperpage>8</postsperpage>
+  <showlivepreview>False</showlivepreview>
+  <showpostnavigation>False</showpostnavigation>
+  <disqusaddcommentstopages>False</disqusaddcommentstopages>
+  <blogrollmaxlength>23</blogrollmaxlength>
+  <enableopensearch>True</enableopensearch>
+  <syndicationformat>Rss</syndicationformat>
+  <commentwhitelistcount>1</commentwhitelistcount>
+  <displayratingsonrecentposts>False</displayratingsonrecentposts>
+  <dayscommentsareenabled>0</dayscommentsareenabled>
+  <enablerelatedposts>False</enablerelatedposts>
+  <enablequicknotes>True</enablequicknotes>
+  <authorname>NRBB</authorname>
+  <trackingscript />
+  <redirecttoremovefileextension>True</redirecttoremovefileextension>
+  <numberofreferrerdays>1</numberofreferrerdays>
+  <addiptowhitelistfilteronapproval>False</addiptowhitelistfilteronapproval>
+  <searchbuttontext>Search</searchbuttontext>
+  <enableoptimization>False</enableoptimization>
+  <avatar>blank</avatar>
+  <mobiletheme>nrbb</mobiletheme>
+  <enablepingbacksend>False</enablepingbacksend>
+  <htmlheader />
+  <galleryfeedurl>http://dnbegallery.org/feed/FeedService.svc</galleryfeedurl>
+  <enablepingbackreceive>False</enablepingbackreceive>
+  <showdescriptioninpostlist>False</showdescriptioninpostlist>
+  <removeextensionsfromurls>True</removeextensionsfromurls>
+  <endorsement>http://www.dotnetblogengine.net/syndication.axd</endorsement>
+  <enablepasswordreset>True</enablepasswordreset>
+  <smtpserverport>25</smtpserverport>
+  <searchdefaulttext>Enter search term or APML url</searchdefaulttext>
+  <smtpserver>mail.example.com</smtpserver>
+  <name>North Royalton Band Boosters</name>
+  <geocodinglatitude>0</geocodinglatitude>
+  <handlewwwsubdomain />
+  <contactthankmessage>&lt;h1&gt;Thank you&lt;/h1&gt;&lt;p&gt;The message was sent.&lt;/p&gt;</contactthankmessage>
+  <disquswebsitename />
+  <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>
+  <enablereferrertracking>False</enablereferrertracking>
+  <enablehttpcompression>True</enablehttpcompression>
+  <enableerrorlogging>True</enableerrorlogging>
+  <iscommentnestingenabled>False</iscommentnestingenabled>
+  <smtppassword>password</smtppassword>
+  <blogrollupdateminutes>60</blogrollupdateminutes>
+</settings>

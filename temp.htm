@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Flickr Test</title>
+    <meta name="description" content="North Royalton Band Boosters" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:700,700italic,900,900italic|Merriweather+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+
+    <script src="js/less-1.7.0.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="backslider-wrapper">
+                <div class="jumbotron2 backslider" id="Div1">
+
+                    <h1><span>Welcome</span>
+                        to the official North Royalton Band Boosters website.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Main.js"></script>
+    <script src="js/modernizr.custom.77067.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.backslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#Div1').backslider({
+                mode: 'timer',
+                effect: 'SlideFade',
+                photoRange: '1-253',
+                speed: 'slow',
+                photoSource: 'flickrfeed',
+                centerImages: false,
+                flickrFeedQuery: {
+                    set: '72157636460028176',
+                    nsid: '23171135@N02'
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // get backslider instance
+            var bs = $('#bs0').data('backslider');
+            // effect
+            $('#bs_effect a').click(function (e) {
+                e.preventDefault();
+                bs.settings.effect = $(this).attr('href').substr(1);
+                $(this).parent().addClass('active').siblings().removeClass('active');
+            });
+            // speed
+            $('#bs_speed a').click(function (e) {
+                e.preventDefault();
+                bs.settings.effectTime = parseInt($(this).attr('href').substr(1), 10);
+                $(this).parent().addClass('active').siblings().removeClass('active');
+            });
+            // mode
+            $('#bs_mode a').click(function (e) {
+                e.preventDefault();
+                bs.settings.mode = $(this).attr('href').substr(1);
+                $('#bs0').find('.bs-controls').fadeOut('fast', function () {
+                    $(window).unbind('scroll');
+                    window.clearInterval(bs.timer);
+                    $(this).empty().fadeIn('fast');
+                    bs.modes[bs.settings.mode].call(bs);
+                });
+                $(this).parent().addClass('active').siblings().removeClass('active');
+                $('.hint').stop(false, true).animate({ bottom: '+=10' }, 'fast').animate({ bottom: '-=10' }, 'fast');
+            });
+        });
+    </script>
+
+    <!-- 06a3af3c8f3071dab2da9901b4a9fd12 -->
+</body>
+</html>

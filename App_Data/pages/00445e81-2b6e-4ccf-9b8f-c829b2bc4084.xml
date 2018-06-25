@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>Boosters</title>
+  <description>Boosters</description>
+  <content>Boosters</content>
+  <keywords>Boosters</keywords>
+  <slug>boosters</slug>
+  <parent>00000000-0000-0000-0000-000000000000</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <datecreated>2014-04-19 09:04:00</datecreated>
+  <datemodified>2014-04-19 09:53:13</datemodified>
+</page>

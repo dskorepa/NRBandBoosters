@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>General Payment</title>
+  <description>General Payment</description>
+  <content>&lt;!--
+&lt;script type="text/javascript" src="http://form.jotformpro.com/jsform/41817692939975"&gt;&lt;/script&gt;
+--&gt;
+
+&lt;iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="http://form.jotformpro.com/form/41817692939975" frameborder="0" style="width:100%; height:2952px; border:none;" scrolling="no"&gt;&lt;/iframe&gt;</content>
+  <keywords>General Payment</keywords>
+  <slug>general-payment</slug>
+  <parent>5a1b4eb9-d1bb-42c6-ab25-36f305e93d83</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <datecreated>2014-05-31 09:05:00</datecreated>
+  <datemodified>2015-04-18 07:08:49</datemodified>
+</page>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>Band Booster Membership</title>
+  <description>North Royalton Band Booster Membership</description>
+  <content>&lt;p&gt;An updated membership form will be available soon.&lt;/p&gt;
+&lt;!-- 
+&lt;p&gt;To become a member, please download and fill out this membership form:&lt;/p&gt;
+&lt;p&gt;&lt;a href="/FILES%2f2017%2f08%2fNRHS-Band-Booster-Membership-2017-18.doc.axdx"&gt;&lt;b&gt;NRHS Band Booster Membership 2017-18 &lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Form and payment can be brought to band booster meetings, preview day, dropped in the white box in the band room, or mail to PO Box 33506, North Royalton, OH 44133.&lt;/p&gt;
+--&gt;</content>
+  <keywords>Band Booster Membership</keywords>
+  <slug>band-booster-membership</slug>
+  <parent>5a1b4eb9-d1bb-42c6-ab25-36f305e93d83</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <datecreated>2014-05-11 09:05:00</datecreated>
+  <datemodified>2018-06-13 12:12:43</datemodified>
+</page>

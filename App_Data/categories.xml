@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<categories>
+    <category id="fae1d1e9-f3db-4642-a1d4-3d3f0fe85929" description="" parent="">Alumni</category>
+    <category id="a70d94a8-5d3c-44aa-b4d6-29cb41d521c4" description="" parent="">Announcements</category>
+    <category id="6defe6a0-9313-4c69-ade3-77b41afc975c" description="" parent="">Band News</category>
+    <category id="8fccb9f0-4993-489b-b231-4593baca27ee" description="" parent="">Booster News</category>
+    <category id="6d8a90b6-376d-4bfc-b998-4281154f0d7b" description="" parent="">Events</category>
+    <category id="04fc31b2-00cd-4a3d-ae40-f49af9a917eb" description="" parent="">Fundraising</category>
+    <category id="cb833fb4-aa5a-44ad-83ed-9d538b705180" description="" parent="">Meeting Minutes</category>
+    <category id="53e26df9-477c-4527-97c4-bce1fcd9688b" description="Newsletters" parent="">Newsletters</category>
+    <category id="8a8649e2-a13d-47f8-abcb-7c344cb83e51" description="" parent="">Reminders</category>
+    <category id="fa6094d0-c8e0-4964-8deb-b6349a6dd281" description="Volunteer needs" parent="">Volunteer Needs</category>
+</categories>

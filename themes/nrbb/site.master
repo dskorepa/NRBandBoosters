@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="StandardSite" %>
+
+<%@ Import Namespace="BlogEngine.Core" %>
+<%@ Import Namespace="System.Linq" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta name="description" content="North Royalton Band Boosters" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:700,700italic,900,900italic|Merriweather+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet/less" type="text/css" href="/css/style.less">
+    <link href="~/editors/tiny_mce_3_5_8/plugins/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="~/editors/tiny_mce_3_5_8/plugins/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<%# ShRoot %>scripts/XRegExp.js"></script>
+    <script type="text/javascript" src="<%# ShRoot %>scripts/shCore.js"></script>
+    <script type="text/javascript" src="<%# ShRoot %>scripts/shAutoloader.js"></script>
+    <script type="text/javascript" src="<%# ShRoot %>shActivator.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta property="og:image" content="/img/Logo.png" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-53648990-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body class="<%=Resources.labels.LangDirection %>" id="mainbody">
+    <form runat="Server">
+        <header id="top" class="headerlight">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="mainnav">
+                        <nav role="navigation">
+                            <button type="button" class="navbar-toggle navbutton" data-toggle="collapse" data-target=".navbar-collapse">
+                                Menu
+                            </button>
+                            <div class="collapse navbar-collapse nav-right">
+                                <ul class="nav navbar-nav">
+                                    <%foreach (BlogEngine.Core.Page parentPage in BlogEngine.Core.Page.Pages.Where(p => !p.HasParentPage && p.IsPublished && p.ShowInList))
+                                      { %>
+                                    <li class="dropdown">
+                                        <a <%if (parentPage.HasChildPages)
+                                             { %>data-toggle="dropdown"
+                                            class="dropdown-toggle" <% } %>href="<%=parentPage.RelativeLink %>"><%=parentPage.Title%> </a>
+                                        <%if (parentPage.HasChildPages)
+                                          { %>
+
+                                        <ul class="dropdown-menu">
+                                            <%foreach (BlogEngine.Core.Page childPage in BlogEngine.Core.Page.Pages.Where(p => p.Parent == parentPage.Id && p.IsPublished))
+                                              { %>
+                                            <li>
+                                                <a href="<%=childPage.RelativeLink %>"><%=childPage.Title %></a>
+                                            </li>
+                                            <% } %>
+                                        </ul>
+                                    </li>
+
+                                    <% } %>
+
+                                    <% } %>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <a class="homelink" href="/">
+                        <h2 class="bandboostername">Band<br />
+                            Boosters</h2>
+                    </a>
+                </div>
+
+
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="jumbotron-inside backslider-wrapper" role="banner">
+                    <div class="container-fluid backslider" id="Div1">
+                        <a href="https://www.flickr.com/photos/nrhsmarchingband" class="home-jumbtron-flickrlink hidden-xs">Find us on Flickr</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+                    <div class="row hidden-xs">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <a class="twitter-timeline" href="https://twitter.com/NRBandBoosters" data-widget-id="452543546097037312">Tweets by @NRBandBoosters</a>
+                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <iframe class="facebook-like" src="http://www.facebook.com/plugins/likebox.php?href=http://www.facebook.com/pages/North-Royalton-Band-Boosters/164850233634290&amp;force_wall=true&amp;colorscheme=light&amp;show_faces=false&amp;border_color=%23800080&amp;stream=true&amp;header=false" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 100%; height: 376px;" allowtransparency="false"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row sidecol">
+                        <div class="col-sm-6 col-md-12">
+							<a href="/post/2018/05/25/band-front-registration-2018"class="cta-purple buzz-out">Band Front <span>Registration</span></a>
+							<a href="/page/Band-Registration-Instructions" class="cta-gold buzz-out">Band Registration<span>Click Here</span></a>
+                            <a href="/page/volunteer-now" class="cta-purple buzz-out">Volunteer Now!<span>Sign Up Here</span></a>
+							<a href="/page/band-booster-membership" class="cta-gold buzz-out">Join Band Boosters<span>Register Here</span></a>
+                            <a href="https://smile.amazon.com/gp/f.html?C=3068BIOUGWKOA&K=PPIKUBGO85LU&M=urn:rtn:msg:201711131505028c6f8765847c41f6a551e7ddffd0p0na&R=20U6TRGLZLFEA&T=C&U=http%3A%2F%2Fsmile.amazon.com%2Fch%2F34-1817202&A=WIYXFCKWQTKJRR7QXDAUUAMAWT4A&H=E8FJJTTAXGPLXWKB1CFNSNVVBHMA"><img src="/img/AmazonSmileBanner-NRHSBandBoosters.PNG" alt="North Royalton Band Boosters Amazon Smile Fundraiser" width="300" /></a>
+                        </div>
+
+                        
+                    </div>
+                    <blog:WidgetZone ID="WidgetZone1" runat="server" ZoneName="be_WIDGET_ZONE" />
+                    <blog:SearchOnSearch ID="SearchOnSearch1" runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row music">
+                &nbsp;
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://twitter.com/NRBandBoosters" class="twitter text-hide buzz-out">Twitter</a>
+                <a href="https://www.facebook.com/pages/North-Royalton-Band-Boosters/164850233634290" class="facebook text-hide buzz-out">Facebook</a>
+                <a href="https://www.flickr.com/photos/nrhsmarchingband" class="flickr text-hide buzz-out">Flickr</a>
+                <a href="/syndication.axd" class="rss text-hide buzz-out">RSS</a>
+            </div>
+            <p class="footer-links"><a href="/">Home</a>  |  <a href="/page/sponsors">Sponsors</a>  |  <a href="/page/links">Links</a>  |  <a href="/page/contact">Contact&nbsp;Us</a>  |  <a href="/page/privacy-policy">Privacy Policy</a>  |  <a runat="server" id="aLogin"></a></p>
+            <p>
+                &copy;
+                <script language="javascript" type="text/javascript">
+                    var today = new Date()
+                    var year = today.getFullYear()
+                    document.write(year)
+                </script>
+                North Royalton Band Boosters. All rights reserved.
+            </p>
+
+        </footer>
+
+
+    <script src="/js/less-1.7.0.js" type="text/javascript"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/js/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/Main.js"></script>
+        <script src="/js/jquery.easing.1.3.js"></script>
+        <script src="/js/jquery.backslider.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#Div1').backslider({
+                    mode: 'timer',
+                    effect: 'SlideFade',
+                    //photoRange: '95-1',
+                    startRandom: 'true',
+                    speed: 'slow',
+                    controls: 'false',
+                    photoSource: 'flickrfeed',
+                    centerImages: true,
+                    flickrFeedQuery: {
+                        //single set:
+
+                        //set: '72157636460028176',
+                        //multiple sets test:
+                    	set: ["72157686570577561"],
+                        nsid: '23171135@N02'
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // get backslider instance
+                var bs = $('#bs0').data('backslider');
+                // effect
+                $('#bs_effect a').click(function (e) {
+                    e.preventDefault();
+                    bs.settings.effect = $(this).attr('href').substr(1);
+                    $(this).parent().addClass('active').siblings().removeClass('active');
+                });
+                // speed
+                $('#bs_speed a').click(function (e) {
+                    e.preventDefault();
+                    bs.settings.effectTime = parseInt($(this).attr('href').substr(1), 10);
+                    $(this).parent().addClass('active').siblings().removeClass('active');
+                });
+                // mode
+                $('#bs_mode a').click(function (e) {
+                    e.preventDefault();
+                    bs.settings.mode = $(this).attr('href').substr(1);
+                    $('#bs0').find('.bs-controls').fadeOut('fast', function () {
+                        $(window).unbind('scroll');
+                        window.clearInterval(bs.timer);
+                        $(this).empty().fadeIn('fast');
+                        bs.modes[bs.settings.mode].call(bs);
+                    });
+                    $(this).parent().addClass('active').siblings().removeClass('active');
+                    $('.hint').stop(false, true).animate({ bottom: '+=10' }, 'fast').animate({ bottom: '-=10' }, 'fast');
+                });
+            });
+        </script>
+        <script>
+            $(function () {
+                //caches a jQuery object containing the header element
+                var header = $(".headerlight");
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+
+                    if (scroll >= 200) {
+                        header.removeClass('headerlight').addClass("headerdark");
+                    } else {
+                        header.removeClass("headerdark").addClass('headerlight');
+                    }
+                });
+            });
+        </script>
+    </form>
+</body>
+</html>
